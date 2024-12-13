@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фіксована блокова верстка</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            position: relative;
+            width: 300px;
+            height: 500px;
+            background-color: white;
+            border: 2px solid black;
+        }
+
+        .block1, .block2, .block3, .block4, .block5 {
+            position: absolute;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+        }
+
+        .block1 {
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 70px;
+            background-color: blue;
+        }
+
+        .block2 {
+            top: 70px;
+            bottom: 70px;
+            left: 0;
+            width: 70px;
+            background-color: gold;
+        }
+
+        .block3 {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 70px;
+            background-color: blue;
+        }
+
+        .block4 {
+            top: 140px;
+            left: 70px;
+            right: 0;
+            bottom: 70px;
+            background-color: white;
+        }
+
+        .block5 {
+            top: 70px;
+            left: 70px;
+            height: 70px;
+            right: 0;
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="block1">1</div>
+    <div class="block2">2</div>
+    <div class="block3">3</div>
+    <div class="block4">4</div>
+    <div class="block5">5</div>
+</div>
+
+</body>
+</html>

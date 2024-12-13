@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фіксована таблична верстка</title>
+    <style>
+        table {
+            width: 400px; 
+            height: 600px; 
+            border-collapse: collapse;
+            margin: 50px auto;
+        }
+        td {
+            border: 1px solid black;
+        }
+        .top, .bottom {
+            background-color: blue;
+            height: 100px; 
+        }
+        .side {
+            background-color: gold;
+            width: 100px; 
+        }
+        .center {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td colspan="3" class="top">1</td>
+    </tr>
+    <tr>
+        <td class="side">2</td>
+        <td class="center">4</td>
+        <td class="side">5</td>
+    </tr>
+    <tr>
+        <td colspan="3" class="bottom">3</td>
+    </tr>
+</table>
+
+</body>
+</html>
