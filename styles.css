@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-weight: 1000;
+    font-size: 34px;
+    text-align: center;
+}
+
+.navbar {
+    background-color: white; 
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 40px;
+    transition: background-color 0.3s;
+    background-color: black;
+}
+
+.nav-list a:hover {
+    background-color: #555;
+}
+
+.dropdown {
+    position: relative; 
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute; 
+    background-color: #333;
+    padding: 10px;
+    list-style-type: none;
+    margin: 0;
+    top: 100%;
+    right: 0;
+    min-width: 150px;
+}
+
+.dropdown-menu li {
+    margin: 5px 0;
+}
+
+.dropdown-menu a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.course-info {
+    padding: 40px; 
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    margin: 20px; 
+}
+
+.course-title {
+    color: orange; 
+    font-weight: bold; 
+    font-size: 20px; 
+    text-align: center;
+}
+
+.course-content {
+    display: flex; 
+    align-items: flex-start; 
+    margin-top: 20px; 
+    margin-bottom: 50px;
+}
+
+#blue {
+    color: #3398F2;
+}
+
+.main-course-image {
+    width: 400px; 
+    height: auto; 
+    margin-right: 20px; 
+}
+
+.course-details {
+    flex: 1; 
+    margin-left: 350px;
+}
+
+.course-details h4 {
+    font-weight: bold; 
+    margin-top: 10px; 
+    font-size: 20px;
+}
+
+.course-details p {
+    margin: 0; 
+    font-size: 18px;
+    padding-left: 20px; 
+}
+
+.course-content button {
+    background-color: #fee200; 
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: flex-end; 
+    margin-right: 0; 
+    position: relative;
+    bottom: -20px; 
+}
+
+.pricing {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #3398F2;
+}
+
+.price-plan {
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.price-plan h3 {
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.price-plan ul {
+    list-style-type: none;
+    padding: 20px 0;
+}
+
+.price-plan p {
+    font-size: 1.5rem;
+    color: #3398F2;
+    margin-top: 20px;
+}
+
+.price-plan button {
+    background-color: #fee200;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#places {
+    font-size: 1rem;
+    margin-bottom: -20px;
+}
+
+.price-plan p s {
+    color: #ff0000;
+    text-decoration: line-through;
+}
+
+.cta {
+    padding: 40px;
+    background-color: #3398F2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.cta-content {
+    display: flex;
+    align-items: center;
+}
+
+.cta-text {
+    margin-right: 60%;
+}
+
+.cta-text h1 {
+    color: black;
+    text-align: left;
+}
+
+.cta-text h2 {
+    color: white;
+    text-align: left;
+}
+
+.cta-text p {
+    color: white;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.cta button {
+    background-color: #fee200;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.qa-course {
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.qa-course-content {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.qa-course-text {
+    text-align: center; 
+    margin-right: 20px; 
+}
+
+.qa-course-image {
+    width: auto; 
+    height: auto;
+    margin-left: auto; 
+}
+
+.qa-course h2 {
+    color: orange;
+    text-align: left;
+}
+
+.qa-course h3 {
+    color: black;
+    text-align: left;
+}
+
+.qa-course p {
+    color: black;
+    text-align: left;
+}
+
+.qa-course button {
+    background-color: #3398F2;
+    color: white;
+    padding: 15px 30px; 
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block; 
+    width: fit-content;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 5px 10px; 
+    }
+
+    .nav-list a {
+        font-size: 30px; 
+        padding: 10px 15px; 
+    }
+
+    .course-content {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .course-image {
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+
+    .course-details {
+        margin-left: 0; 
+    }
+
+    .course-image {
+        width: 45%; 
+    }
+}
